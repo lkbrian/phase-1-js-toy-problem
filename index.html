@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./challengeOne.js" defer></script>
+    <script src="./challengeTwo.js" defer></script>
+    <script src="./challengeThree.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <section>
+        <span>Grading system</span>
+        <label>Enter Score Attained</label>
+        <input type="text" id="gradeInput" />
+        <button id="gradeButton">Get Grade</button>
+        <h1 id="grades"></h1>
+      </section>
+      <section>
+        <span>Speed detector</span>
+        <label>Enter Current Speed Recorded</label>
+        <input type="text" id="speedInput" />
+        <button id="speedButton">Demerit Points</button>
+        <h1 id="speed"></h1>
+      </section>
+      <section>
+        <span>Net salary Calculator</span>
+        <label>Enter Groos salary</label>
+        <input type="text" id="salaryInput" />
+        <button id="salaryButton">Net Salary</button>
+        <div id="tax">
+          <h3 id="PAYEE">PAYEE</h3>
+          <h3 id="NHIF">NHIF</h3>
+          <h3 id="NSSF">NSSF</h3>
+          <h3 id="Housing">Housing Levy</h3>          
+        </div>
+        <h2 id="finalAmount"></h2>
+      </section>
+    </div>
+    <style>
+      * {
+        font-family: "Outfit", sans-serif;
+      }
+      body {
+        text-align: center;
+      }
+
+      body div,
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 30px;
+      }
+      label {
+        font-size: 1.2rem;
+      }
+      span {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem;
+      }
+      section {
+        width: 500px;
+        height: auto;
+        border: 5px solid black;
+        border-radius: 1rem;
+        padding: 10px;
+        text-align: center;
+      }
+      section #tax {
+        text-align: start;
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+      }
+      input {
+        text-align: center;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+        margin: 24px 0 17px;
+        font-size: 1.2rem;
+      }
+      button {
+        line-height: 40px;
+        padding: 0 20px;
+        border: none;
+        outline: none;
+        background: black;
+        color: white;
+        border-radius: 0.7rem;
+        font-size: 1.04rem;
+        cursor: pointer;
+        scale: 1;
+      }
+      button:hover {
+        scale: 1.1;
+      }
+      h3 {
+        font-weight: 500;
+        padding: 0;
+        margin: 1px;
+        border-bottom: 1px solid black;
+        width: 100%;
+      }
+    </style>
+  </body>
+</html>
