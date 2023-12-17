@@ -3,24 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links to the foogle outfit font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <!-- linking javascript file to my html -->
     <script src="./challengeOne.js" defer></script>
     <script src="./challengeTwo.js" defer></script>
     <script src="./challengeThree.js" defer></script>
     <title>Document</title>
   </head>
   <body>
+    <!-- div with  flex styling properties to center the tag  -->
     <div>
+      <!-- grading section -->
       <section>
         <span>Grading system</span>
         <label>Enter Score Attained</label>
+        <!-- used that takes users input -->
         <input type="text" id="gradeInput" />
+        <!-- activated by the event listener to take the input -->
         <button id="gradeButton">Get Grade</button>
+        <!-- the element that displays the output -->
         <h1 id="grades"></h1>
       </section>
       <section>
@@ -44,6 +51,7 @@
         <h2 id="finalAmount"></h2>
       </section>
     </div>
+    <!-- css stylings for the above html code -->
     <style>
       * {
         font-family: "Outfit", sans-serif;
@@ -95,15 +103,19 @@
         padding: 0 20px;
         border: none;
         outline: none;
-        background: black;
-        color: white;
+        background: #000;
+        color: #fff;
         border-radius: 0.7rem;
         font-size: 1.04rem;
         cursor: pointer;
         scale: 1;
+        border: 3px solid #000;
       }
       button:hover {
         scale: 1.1;
+        transition: ease-in-out .3s;
+        background: #fff;
+        color: #000;
       }
       h3 {
         font-weight: 500;
