@@ -27,6 +27,6 @@ the  we move to the net salary calculator that calcultes payee first then does t
 from the gross salary that is taken as user input  which is displayed as the solution
 
 ## Conclusion 
-1.I applied the use of event listeners 
-2.Linked html to all my JS files for input and output
-3.Styled my html to be a bit pleasing i applied flex
+1. I applied the use of event listeners 
+2. Linked html to all my JS files for input and output
+3. Styled my html to be a bit pleasing i applied flex
