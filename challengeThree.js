@@ -63,22 +63,14 @@ document.getElementById("salaryButton").addEventListener("click", function () {
     } else if (salary > 800000) {
       payee = (userInput * 0.35).toFixed(2)
     }
-    netSalary = (userInput - nssf - housing - payee - nhif).toFixed(2);;
-    // returning the output in two decimal places since we are dealing with currency
-    return total = {
-      PAYEE: payee,
-      NHIF: nhif,
-      NSSf: nssf,
-      HousingLevy : housing,
-      NetSalary: netSalary
+    netSalary = userInput - nssf - housing - payee - nhif
+    return netSalary.toFixed(2);
     }
-  }
-  //calling the function to return the output when user inpurt is passed as an argument
-  netSalaryCalculator(userInput);
-  //display  output by use of html tags  and adding a bit of space between them
-
-  //displayin the final amount which would be the net salary
-  document.getElementById(
-    "finalAmount"
-  ).innerHTML = netSalaryCalculator(userInput).to;
-});
+    //displaying output in html tags
+    netSalaryCalculator(userInput)
+    document.getElementById("PAYEE").innerHTML = `PAYEE&ensp;&emsp;&ensp;&ensp; &emsp;&ensp;KSH ${payee}`;
+    document.getElementById("NHIF").innerHTML = `NHIF&ensp;&emsp;&ensp;&ensp; &emsp;&ensp;&ensp;&nbsp;KSH ${nhif} `;
+    document.getElementById("NSSF").innerHTML = `NSSF&ensp;&emsp;&ensp;&ensp; &emsp;&ensp;&ensp;&nbsp;KSH ${nssf}`;
+    document.getElementById("Housing").innerHTML = `Housing levy&ensp; &emsp;KSH${housing}`;
+    document.getElementById("finalAmount").innerHTML = `Net Salary:&ensp; &emsp;KSH ${netSalaryCalculator(userInput)}`;
+}); 
